@@ -26,7 +26,7 @@ To run the SPF Checker locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/spf-checker.git
+   git clone https://github.com/Hira703/SPF-checker
    cd spf-checker
    ```
 Install dependencies:
@@ -39,29 +39,23 @@ npm run dev
 ```
 Open your browser and navigate to http://localhost:5173.
 
-Usage
-Enter a domain name (e.g., example.com) into the input field.
 
-Click the "Check SPF" button or press Enter.
+## Usage
 
-View the SPF records displayed below the input field.
+- **Enter Domain**: Type a domain name (e.g., `example.com`) into the input field.
+- **Check SPF**: Click the "Check SPF" button or press Enter.
+- **View SPF Records**: Displayed below the input field.
+- **View Includes**: Click on any `include:` mechanism to see SPF records of included domains.
 
-Click on any include: mechanism to view the SPF records of the included domain.
+## Validation
 
-Validation
-Invalid Domains: If no DNS TXT records are found, an error message is displayed: "No DNS TXT records found for this domain."
+- **Invalid Domains**: "No DNS TXT records found for this domain."
+- **No SPF Records**: "No SPF record found."
+- **Empty Input**: Clicking "Check SPF" without a domain does nothing.
 
-No SPF Records: If no v=spf1 records are found, an error message is displayed: "No SPF record found."
+## Design
 
-Empty Input: Clicking "Check SPF" without entering a domain does nothing; no error is thrown.
-
-Design
-The application features a clean and responsive design:
-
-Input Field: Centered at the top with placeholder text guiding the user.
-
-Button: Positioned next to the input field, changing text based on loading state.
-
-Results Area: Displays SPF records in cards, with mechanisms like include: and redirect= highlighted.
-
-Responsive Layout: Adapts to different screen sizes using Tailwind CSS classes.
+- **Input Field**: Centered with placeholder text.
+- **Button**: Positioned next to input field; text changes on loading.
+- **Results Area**: SPF records displayed in cards; `include:` and `redirect=` highlighted.
+- **Responsive Layout**: Adapts to different screen sizes using Tailwind CSS.
