@@ -3,6 +3,11 @@
 
 A simple, single-page React application that allows users to check the Sender Policy Framework (SPF) records of any domain. This tool helps verify which mail servers are authorized to send emails on behalf of a domain, aiding in email security and anti-spoofing measures.
 
+## Live Demo
+
+- **Check it live here**: [https://spf-checker.vercel.app/](https://spf-checker.vercel.app/)
+
+
 ## Features
 
 - **Domain Input**: Enter a domain name to check its SPF records.
