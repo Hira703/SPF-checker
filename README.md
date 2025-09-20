@@ -64,3 +64,9 @@ Open your browser and navigate to http://localhost:5173.
 - **Button**: Positioned next to input field; text changes on loading.
 - **Results Area**: SPF records displayed in cards; `include:` and `redirect=` highlighted.
 - **Responsive Layout**: Adapts to different screen sizes using Tailwind CSS.
+
+## Assumptions / Limitations
+
+- Only TXT records starting with `v=spf1` are shown.
+- Subdomains or included SPF records are fetched only when clicked.
+- Works only with domains that have public DNS records accessible via Google DNS-over-HTTPS API.
